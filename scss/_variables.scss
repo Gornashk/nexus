@@ -11,18 +11,28 @@ $white:                 #fff;
 
 // Accent colors
 // -------------------------
-$blue:                  #17579e;
-$lightBlue:             lighten($blue,15%);
-$darkBlue:              darken($blue,15%);
+$brown:                 #A28E74;
+$lightBrown:            #eedbc3;
+$lightBrownTrans:       rgba(238, 219, 195, .5);
+$darkBrown:             #554735;
+$blue:                  #51a5ae;
+$blueTrans:             rgba(81, 165, 174, .75);
+$lightBlue:             #83D5C6;
+$darkBlue:              darken($blue,10%);
 $red:                   #c33c54;
-$lightRed:							lighten($red,15%);
-$darkRed:               darken($red,15%);
+$lightRed:							lighten($red,10%);
+$darkRed:               darken($red,10%);
+$green:                 #09492b;
+$greenTrans:            rgba(9, 73, 43, .5);
+$lightGreen:            lighten($green,10%);
+$darkGreen:             darken($green,10%);
+
 
 
 // Site Colors
 // -------------------------
-$primary-color:   $blue;
-$secondary-color:	$red;
+$primary-color:   $brown;
+$secondary-color:	$green;
 
 
 
@@ -30,8 +40,8 @@ $secondary-color:	$red;
 // -------------------------
 //$font-stack:      Helvetica, sans-serif;
 
-$sansFontFamily:        'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+$sansFontFamily:        'Fira Sans', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serifFontFamily:       'Fira Sans Condensed', Georgia, "Times New Roman", Times, serif;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 $baseFontSize:          16px;

@@ -13,5 +13,5 @@ let mix = require("laravel-mix");
 
 mix.js("js/app.js", "public/js")
 .sass("scss/main.scss", "public/css")
-.setPublicPath('public');
-//.browserSync('your-local-domain.local');
+.setPublicPath('public')
+.browserSync('nexus.local');

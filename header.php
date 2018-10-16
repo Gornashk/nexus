@@ -21,10 +21,23 @@
 <div id="page" :class="{ opened : mobileMenu }">
 
 	<header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
-	  <div class="container">
+		<div class="topBar">
+			<div class="container">
+				<div class="row">
+					<form class="trackOrder">
+						<input type="text" placeholder="Enter order tracking number" />
+						<button>Track Order</button>
+					</form>
+					<div class="topContact">
+						<p>315-555-1234<a href="">Contact Us</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	  <div class="container mainBar">
 	    <div class="row">
 	      <div class="col-md-4">
-	        <a href="/" class="site-logo"><img src="https://placehold.it/200x70"></a>
+	        <a href="/" class="site-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nexus-web-logo.svg"></a>
 	      </div>
 	      <div class="col-md-8">
 	        <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>

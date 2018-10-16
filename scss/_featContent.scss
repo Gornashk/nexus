@@ -1,0 +1,82 @@
+.featCont {
+  padding: .5em 0;
+  margin-bottom: 2em;
+  color: $white;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  
+  @include breakpoint(tablet) {
+    margin-bottom: 4em;
+  }
+
+  .row {
+    @include breakpoint(tablet) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .sideImg {
+    padding: 1.5em 0;
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      padding: 3em 0;
+    }
+
+    .imgWrap {
+      position: relative;
+      display: inline-block;
+
+      img {
+        position: relative;
+        z-index: 1;
+
+        &.shadow {
+          position: absolute;
+          z-index: 0;
+          top: 6px;
+          right: 0;
+          -webkit-filter: blur(6px) contrast(0%) brightness(25%);
+          filter: blur(6px) contrast(0%) brightness(25%);
+          opacity: .3;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 1.55em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: $white!important;
+
+    @include breakpoint(tablet) {
+      font-size: 2.25em;
+      margin-bottom: 2em;
+    }
+  }
+
+  span {
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    display: block;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -1em;
+      width: 50px;
+      height: 2px;
+      @include border-radius(1px);
+      background: $white;
+    }
+    @include breakpoint(tablet) {
+      font-size: 1.5em;
+    }
+  }
+}

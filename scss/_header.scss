@@ -1,4 +1,61 @@
 .site-header {
-  background-color: #eee;
-  display: flex;
+  background: transparent;
+  margin-bottom: 1.5em;
+
+  .site-logo {
+    max-width: 200px;
+    display: block;
+  }
+  .mainBar {
+    padding-top: 1.325em;
+    padding-bottom: 1.325em;
+
+  }
+  
+  .row, .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:after,
+    &:before {
+      content:initial;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      list-style: none;
+    }
+  }
+  .topBar {
+    background: $lightBrown;
+    border-bottom: 2px solid $darkBrown;
+
+    .row {
+      margin: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    form {
+      padding: .5em 0;
+    }
+    .topContact {
+      font-size: .8125em;
+
+      a {
+        display: inline-block;
+        margin-left: 1em;
+        padding-left: 1em;
+        border-left: 2px solid $blue;
+      }
+    }
+  }
 }
