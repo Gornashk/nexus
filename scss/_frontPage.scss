@@ -1,6 +1,6 @@
 .fullscreenVid {
   position: fixed;
-  top: 44px;
+  top: 35px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -32,6 +32,12 @@
     width: 100%;
     bottom: 20px;
     text-align: center;
+
+    h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
   }
 }
 

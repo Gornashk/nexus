@@ -1,6 +1,30 @@
 .site-header {
-  background: transparent;
+  background: url('/wp-content/themes/nexus/img/pageHeader.jpg');
+  background-size: cover;
+  background-position: top center;
   margin-bottom: 1.5em;
+  position: relative;
+  border-bottom: 2px solid $brown;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.625);
+    z-index: 0;
+  }
+
+  &.front {
+    background: transparent;
+    border-bottom: none;
+
+    &:after {
+      background: none;
+    }
+  }
 
   .site-logo {
     max-width: 200px;
@@ -9,7 +33,8 @@
   .mainBar {
     padding-top: 1.325em;
     padding-bottom: 1.325em;
-
+    position: relative;
+    z-index: 5;
   }
   
   .row, .wrap {
@@ -66,18 +91,24 @@
   .topBar {
     background: $lightBrown;
     border-bottom: 2px solid $darkBrown;
+    position: relative;
+    z-index: 5;
 
     .row {
       margin: 0;
+      display: flex;
+      justify-content: flex-end;
     }
     p {
       margin-bottom: 0;
     }
     form {
       padding: .5em 0;
+      display: none;
     }
     .topContact {
       font-size: .8125em;
+      padding: .5em 0;
 
       a {
         display: inline-block;

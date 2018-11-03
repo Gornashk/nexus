@@ -109,12 +109,38 @@ if(have_posts()) : while(have_posts()) : the_post();
 						</div>
 					</div>
 				</div><!-- End Main Content -->
+			
+			<?php // TWO COLUMN SECTION
+			elseif( get_row_layout() == 'two_column_section' ):
+				$leftCol = get_sub_field('left_column');
+				$rightCol = get_sub_field('right_column'); ?>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-push-2">
+							<?php if($leftCol) { ?>
+								<div class="col-sm-5">
+									<?php echo $leftCol; ?>
+								</div>
+							<?php }
+							if($rightCol) {
+								if($leftCol) { 
+									$offset = 'col-sm-offset-2';
+								} else {
+									$offset = '';
+								} ?>
+								<div class="col-sm-5 <?php echo $offset; ?>">
+									<?php echo $rightCol; ?>
+								</div>
+							<?php } ?>
+						</div>
+					</div>
+				</div><!-- End Main Content -->
 
 			<?php // INLINE IMAGE SECTION
 			elseif( get_row_layout() == 'inline_image' ):
 				$image = get_sub_field('image');
-				$imgCap = get_sub_field('image_caption');
-				// crafted_var_dump($image); ?>
+				$imgCap = get_sub_field('image_caption'); ?>
 
 				<div class="container">
 					<div class="row">

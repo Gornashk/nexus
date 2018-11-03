@@ -19,8 +19,12 @@
 	</nav><!-- #mobile-navigation -->
 </div> <!-- #mobile-nav-wrap -->
 <div id="page" :class="{ opened : mobileMenu }">
-
-	<header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
+<?php
+$front = '';
+if(is_front_page()) {
+	$front = 'front';
+} ?>
+	<header class="site-header <?php echo $front; ?>" itemscope="" itemtype="http://schema.org/WPHeader">
 		<div class="topBar">
 			<div class="container">
 				<div class="row">
