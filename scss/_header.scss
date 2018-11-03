@@ -32,6 +32,35 @@
     
     li {
       list-style: none;
+
+      a {
+        &:link,
+        &:visited {
+          padding: .5em 0;
+          display: inline-block;
+          position: relative;
+
+          &:after {
+            content:'';
+            position: absolute;
+            width: 0;
+            left: 50%;
+            bottom: 0;
+            border-bottom: 2px solid transparent;
+            @include transition(all 0.2s ease-in-out);
+          }
+          
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          &:after {
+            width: 100%;
+            left: 0;
+            border-bottom: 2px solid $lightGreen;
+          }
+        }
+      }
     }
   }
   .topBar {
@@ -54,7 +83,7 @@
         display: inline-block;
         margin-left: 1em;
         padding-left: 1em;
-        border-left: 2px solid $blue;
+        border-left: 2px solid $green;
       }
     }
   }

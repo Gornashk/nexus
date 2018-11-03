@@ -25,12 +25,12 @@ body {
 }
 
 a {
-  color: $blue;
+  color: $green;
   @include transition(all .2s ease-in-out);
   &:hover,
   &:active,
   &:focus {
-    color: $darkBlue;
+    color: $lightGreen;
     text-decoration: none;
   }
 }
