@@ -4,14 +4,15 @@
 if(have_posts()) : while(have_posts()) : the_post(); 
 	$intro = get_field('page_intro');
 	// $sections = get_field('content_section'); ?>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 pageIntro">
-				<h1 class="page-title"><?php echo the_title();?></h1>
-				<?php if($intro) {
-					echo '<p>'. $intro .'</p>';
-				} ?>
+	<div class="pageIntro">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h1 class="page-title"><?php echo the_title();?></h1>
+					<?php if($intro) {
+						echo '<p class="introP">'. $intro .'</p>';
+					} ?>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -51,30 +52,39 @@ if(have_posts()) : while(have_posts()) : the_post();
 			elseif( get_row_layout() == 'featured_content' ): 
 				$title = get_sub_field('header');
 				$content = get_sub_field('content');
-				$image = get_sub_field('image'); ?>
+				$image = get_sub_field('image');
+				$noImg = '';
+				if(!$image) {
+					$noImg = 'noImg';
+				} ?>
 
-				<div class="featCont">
+				<div class="featCont <?php echo $noImg; ?>">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-4 sideImg">
-								<?php if($image) { ?>
+							<?php if($image) { ?>
+								<div class="col-sm-4 sideImg">
 									<div class="imgWrap">
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/graphic-final.svg">
-										<img class="shadow" src="<?php echo get_stylesheet_directory_uri(); ?>/img/graphic-final.svg">
-									</div>
-									<!-- <div class="imgWrap">
 										<img src="<?php echo $image['sizes']['large']; ?>">
 										<img class="shadow" src="<?php echo $image['sizes']['large']; ?>">
-									</div> -->
-								<?php } ?>
-							</div>
-							<div class="col-sm-7 col-sm-push-1">
-								<?php if($title) {
-									echo '<h1>'. $title .'</h1>';
-								} if($content) {
-									echo '<span>'.$content .'</span>';
-								} ?>
-							</div>
+									</div>
+								</div>
+								<div class="col-sm-7 col-sm-push-1">
+									<?php if($title) {
+										echo '<h2>'. $title .'</h2>';
+									} if($content) {
+										echo '<span>'.$content .'</span>';
+									} ?>
+								</div>
+							<?php }
+							else { ?>
+								<div class="col-sm-6 col-sm-push-3">
+									<?php if($title) {
+										echo '<h2>'. $title .'</h2>';
+									} if($content) {
+										echo '<span>'.$content .'</span>';
+									} ?>
+								</div>
+							<?php } ?>
 						</div>
 					</div>
 				</div><!-- End Featured Content -->

@@ -1,13 +1,18 @@
 .featCont {
-  padding: .5em 0;
-  margin-bottom: 2em;
+  padding: 1em 0;
+  margin-bottom: 1.5em;
   color: $white;
   text-align: left;
   position: relative;
   overflow: hidden;
+  background-color: $darkBrown;
   
   @include breakpoint(tablet) {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
+    margin-top: 1.5em;
+  }
+  &.noImg {
+    text-align: center;
   }
 
   .row {
@@ -60,9 +65,9 @@
 
   span {
     font-size: 1.125em;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 0;
     display: block;
     position: relative;
 

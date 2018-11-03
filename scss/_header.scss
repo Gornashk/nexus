@@ -2,7 +2,6 @@
   background: url('/wp-content/themes/nexus/img/pageHeader.jpg');
   background-size: cover;
   background-position: top center;
-  margin-bottom: 1.5em;
   position: relative;
   border-bottom: 2px solid $brown;
 
@@ -20,6 +19,7 @@
   &.front {
     background: transparent;
     border-bottom: none;
+    margin-bottom: 1.5em;
 
     &:after {
       background: none;
