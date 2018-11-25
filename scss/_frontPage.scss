@@ -1,12 +1,12 @@
 .fullscreenVid {
   position: fixed;
-  top: 35px;
+  top: 37px;
   right: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
   z-index: -100;
-  height: calc(100vh - 44px);
+  height: calc(100vh - 37px);
 
   &:after {
     content:'';
@@ -70,5 +70,29 @@
 
   .fullscreen-bg__video {
     display: none;
+  }
+}
+
+.linkIcons {
+  padding: 3em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .iconBox {
+    flex: 0 0 20%;
+    padding: 0 1em;
+    margin-bottom: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+
+    svg {
+      font-size: 3.5em;
+      margin-bottom: .25em;
+    }
   }
 }
