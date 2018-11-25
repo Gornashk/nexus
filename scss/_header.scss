@@ -93,6 +93,7 @@
     border-bottom: 2px solid $darkBrown;
     position: relative;
     z-index: 5;
+    @include box-shadow(0 5px 10px rgba(0,0,0,.125));
 
     .row {
       margin: 0;
