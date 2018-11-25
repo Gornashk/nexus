@@ -31,12 +31,52 @@
     position: absolute;
     width: 100%;
     bottom: 20px;
+    left: 0;
     text-align: center;
 
     h2 {
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
+    }
+  }
+}
+.vidOverMain {
+  background:$lightBrownTrans75;
+  padding: 2em 0;
+  margin-top: 4em;
+
+  .container {
+    font-size: 1.125em;
+    line-height: 1.425em;
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .btnRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    a {
+      &:link,
+      &:visited {
+        color: $white;
+        background: $lightGreen;
+        display: inline-block;
+        padding: .75em 1.5em;
+        @include border-radius(4px);
+      }
+      &:hover,
+      &:active, 
+      &:focus {
+        outline: none;
+        background: $green;
+      }
     }
   }
 }

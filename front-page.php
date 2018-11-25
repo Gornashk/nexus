@@ -11,15 +11,21 @@ $dir = get_stylesheet_directory_uri();
   </video>
 </div>
 
-<div class="container vidOverCont">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>The Link and Connections to your Customers</h2>
+<div class="vidOverCont">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>The Link and Connections to your Customers</h2>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-10 col-sm-push-1 col-md-8 col-md-push-2">
-      <?php the_content(); ?>
+  <div class="vidOverMain">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-push-1 col-md-8 col-md-push-2">
+          <?php the_content(); ?>
+        </div>
+      </div>
     </div>
   </div>
   <div class="vidOver_btm">
