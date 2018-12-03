@@ -34,7 +34,7 @@ if(is_front_page()) {
 						<button>Track Order</button>
 					</form>
 					<div class="topContact">
-						<p>315-555-1234<a href="">Contact Us</a></p>
+						<p>315-555-1234<a href="contact-us/">Contact Us</a></p>
 					</div>
 				</div>
 			</div>
