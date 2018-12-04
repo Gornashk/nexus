@@ -11,6 +11,7 @@
 
 
 <script>
+/*
 // this might change in the future
 Modernizr.addTest('mobilesafari', function() {
   return /iP(ad|hone|od).+Version\/[\d\.]+.*Safari/i.test(navigator.userAgent);
@@ -52,6 +53,7 @@ window.addEventListener("orientationchange", () => {
   }, 500)
 
 });
+*/
 </script>
 
 </body>

@@ -16,5 +16,8 @@ require("../scss/main.scss");
 // Require Vue
 require("../vue/app.js");
 
+// Mobile Menu Component
+require("../vue/mobileMenu/app-mobile-menu.js");
+
 // Require JavaScript
 require("./script");

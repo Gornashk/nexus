@@ -2,16 +2,16 @@
 // Add controllers
 require_once( __DIR__ . '/controllers/bootstrap.php' );
 
-// Set up app div
-add_action('crafted_before', function () {
-  echo '<div id="app"> <!-- Open #app -->';
-});
+// // Set up app div
+// add_action('crafted_before', function () {
+//   echo '<div id="app"> <!-- Open #app -->';
+// });
 
-// Close app div
-add_action('wp_footer', function () {
-  // Add controllers
-  echo '</div> <!-- Close #app -->';
-});
+// // Close app div
+// add_action('wp_footer', function () {
+//   // Add controllers
+//   echo '</div> <!-- Close #app -->';
+// });
 
 // Enqueue Vue, Styles, Axios
 // add_action( 'wp_enqueue_scripts', 'vue_enqueue_scripts_styles' );
@@ -22,6 +22,11 @@ function vue_enqueue_scripts_styles () {
 
 // Pass controllers/data to page
 add_action( 'wp_head', function () {
+  $siteUrl = get_site_url();
+  $themeDir = get_stylesheet_directory_uri();
+  wp_localize_script( 'main-js', 'siteurl', $siteUrl );
+  wp_localize_script( 'main-js', 'themeDir', $themeDir );
+  
   // Example of conditionally running controllers
   if ( is_front_page() ) {
     crafted_get_posts();

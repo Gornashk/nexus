@@ -5,6 +5,9 @@ require_once('bones.php'); // if you remove this, bones will break
 // ACF commands
 require_once( 'inc/class-acf-commands.php' ); // ACF fields syncing
 
+// Add php components
+require_once( __DIR__ . '/components/bootstrap.php' );
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 /* NOTE: Only use thumbnails if you need to, to stop digital waste */

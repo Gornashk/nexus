@@ -11,21 +11,15 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php do_action( 'crafted_before' ); ?>
-<div id="mobile-nav-wrap" class="mobile-nav-wrap" :class="{ opened : mobileMenu }" v-show="mobileMenu">
-	<nav id="mobile-navigation-top" class="navigation-mobile" role="navigation">
-    <ul>
-     	<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'items_wrap' => '%3$s', 'container' => '' ) ); ?>
-		</ul>
-	</nav><!-- #mobile-navigation -->
-</div> <!-- #mobile-nav-wrap -->
-<div id="page" :class="{ opened : mobileMenu }">
+<?php // do_action( 'crafted_before' ); ?>
+<div id="page">
 <?php
 $front = '';
 if(is_front_page()) {
 	$front = 'front';
 } ?>
-	<header class="site-header <?php echo $front; ?>" itemscope="" itemtype="http://schema.org/WPHeader">
+	<header class="site-header <?php echo $front; ?>" id="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
+		<?php cr_mobile_menu(); ?>
 		<div class="topBar">
 			<div class="container">
 				<div class="row">
