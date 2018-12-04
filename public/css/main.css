@@ -4467,6 +4467,12 @@ a.btn.resourceBtn:hover {
   background-color: rgba(238, 219, 195, 0.5);
 }
 
+@media (min-width: 768px) {
+  .pageIntro {
+    margin-bottom: 3em;
+  }
+}
+
 .pageIntro h1.page-title {
   font-size: 1.75em;
   margin-bottom: 0;
