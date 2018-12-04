@@ -128,3 +128,17 @@ dl.gallery-item {
 .inlineVid {
   margin-bottom: 3em;
 }
+
+.twoColWrap {
+  margin: 0 -15px;
+
+  &:before {
+    content: '';
+    display: table;
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

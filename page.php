@@ -128,6 +128,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-push-2">
+							<div class="twoColWrap">
 							<?php if($leftCol) { ?>
 								<div class="col-sm-5">
 									<?php echo $leftCol; ?>
@@ -143,6 +144,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 									<?php echo $rightCol; ?>
 								</div>
 							<?php } ?>
+							</div>
 						</div>
 					</div>
 				</div><!-- End Main Content -->

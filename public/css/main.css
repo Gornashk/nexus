@@ -4038,6 +4038,43 @@ a.btn.resourceBtn:hover {
   background: #031c10;
 }
 
+.gform_wrapper .gform_body ul li .gfield_label {
+  display: none;
+}
+
+.gform_wrapper .gform_body ul li input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.gform_wrapper .gform_body ul li textarea {
+  border: 1px solid #554735;
+  font-size: 1em;
+  color: #554735;
+  padding: .5em .75em;
+}
+
+.gform_wrapper .gform_footer {
+  text-align: right;
+}
+
+.gform_wrapper .gform_footer input[type=submit] {
+  border: none;
+  background: #554735;
+  color: #fff;
+  font-size: 1.25em !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: .75em 1em;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.gform_wrapper .gform_footer input[type=submit]:hover,
+.gform_wrapper .gform_footer input[type=submit]:active,
+.gform_wrapper .gform_footer input[type=submit]:focus {
+  background: #A28E74;
+  color: #554735;
+}
+
 .site-header {
   background: url("/wp-content/themes/nexus/img/pageHeader.jpg");
   background-size: cover;
@@ -4567,6 +4604,21 @@ dl.gallery-item {
 
 .inlineVid {
   margin-bottom: 3em;
+}
+
+.twoColWrap {
+  margin: 0 -15px;
+}
+
+.twoColWrap:before {
+  content: '';
+  display: table;
+}
+
+.twoColWrap:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .fullscreenVid {

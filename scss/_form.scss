@@ -1,0 +1,42 @@
+.gform_wrapper {
+
+  .gform_body {
+    ul {
+      li {
+        .gfield_label {
+          display: none;
+        }
+        input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+        textarea {
+          border: 1px solid $darkBrown;
+          font-size: 1em;
+          color: $darkBrown;
+          padding: .5em .75em;
+        }
+      }
+    }
+  }
+  .gform_footer {
+    text-align: right;
+    input[type=submit] {
+      border: none;
+      background: $darkBrown;
+      color: $white;
+      font-size: 1.25em!important;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: .75em 1em;
+      @include border-radius(4px);
+      @include transition(all .2s ease-in-out);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $brown;
+        color: $darkBrown;
+      }
+    }
+  }
+  
+}
