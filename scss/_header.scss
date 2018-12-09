@@ -38,9 +38,12 @@
   }
   
   .row, .wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    @include breakpoint(laptop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     &:after,
     &:before {
@@ -49,11 +52,14 @@
   }
 
   .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    display: none;
+    @include breakpoint(laptop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
     
     li {
       list-style: none;
