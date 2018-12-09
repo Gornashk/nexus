@@ -60,21 +60,52 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
 
-/***/ 10:
-/***/ (function(module, exports, __webpack_require__) {
+var g;
 
-__webpack_require__(11);
-module.exports = __webpack_require__(4);
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
 
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports) {
 
-/***/ 11:
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(3);
+module.exports = __webpack_require__(1);
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86,27 +117,26 @@ module.exports = __webpack_require__(4);
  * Vue is the JavaScript framework used by Base.
  */
 if (window.Vue === undefined) {
-  window.Vue = __webpack_require__(12);
+  window.Vue = __webpack_require__(4);
 
   window.Bus = new Vue();
 }
 
 // Require SASS
 // require("../scss/bootstrap/_bootstrap.scss");
-__webpack_require__(4);
+__webpack_require__(1);
 
 // Require Vue
-__webpack_require__(15);
+__webpack_require__(8);
 
 // Mobile Menu Component
-__webpack_require__(46);
+__webpack_require__(9);
 
 // Require JavaScript
-__webpack_require__(39);
+__webpack_require__(10);
 
 /***/ }),
-
-/***/ 12:
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11069,11 +11099,10 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(13).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(5).setImmediate))
 
 /***/ }),
-
-/***/ 13:
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -11126,14 +11155,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(14);
+__webpack_require__(6);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-
-/***/ 14:
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11323,60 +11351,10 @@ exports.clearImmediate = clearImmediate;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(7)))
 
 /***/ }),
-
-/***/ 15:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// import Posts from "./components/posts";
-
-// var app = new Vue({
-//   el: "#app",
-//   components: {
-//     Posts
-//   },
-//   data() {
-//     return {
-//       mobileMenu: ""
-//     };
-//   }
-// });
-
-
-/***/ }),
-
-/***/ 2:
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 3:
+/* 7 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -11566,23 +11544,27 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-
-/***/ 39:
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+// import Posts from "./components/posts";
+
+// var app = new Vue({
+//   el: "#app",
+//   components: {
+//     Posts
+//   },
+//   data() {
+//     return {
+//       mobileMenu: ""
+//     };
+//   }
+// });
 
 
 /***/ }),
-
-/***/ 4:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 46:
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11609,6 +11591,12 @@ var app = new Vue({
   }
 });
 
-/***/ })
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/******/ });
+"use strict";
+
+
+/***/ })
+/******/ ]);

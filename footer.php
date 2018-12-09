@@ -1,5 +1,13 @@
 	<footer class="site-footer" itemscope="" itemtype="http://schema.org/WPFooter">
 	  <div class="container">
+      <div class="row footTop">
+        <div class="col-md-4">
+          <a href="/" class="site-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nexus-web-logo-white.svg"></a>
+        </div>
+        <div class="col-md-8">
+          <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
+        </div>
+      </div>
 	    <div class="row">
 	      <div class="col-md-12">&copy; <?php echo date('Y'); ?></div>
 	    </div>

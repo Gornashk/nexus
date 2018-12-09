@@ -1,3 +1,69 @@
 .site-footer {
   text-align: center;
+  padding: 1.5em 0;
+  background: $green;
+  border-top: 2px solid $brown;
+
+  .footTop {
+    margin-bottom: 1.5em;
+    @include breakpoint(laptop) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .site-logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 1em;
+
+    @include breakpoint(laptop) {
+      margin: 0;
+    }
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint(laptop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    li {
+      list-style: none;
+
+      a {
+        &:link,
+        &:visited {
+          padding: .5em 0;
+          display: inline-block;
+          position: relative;
+          color: $white;
+
+          &:after {
+            content:'';
+            position: absolute;
+            width: 0;
+            left: 50%;
+            bottom: 0;
+            border-bottom: 2px solid transparent;
+            @include transition(all 0.2s ease-in-out);
+          }
+          
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          &:after {
+            width: 100%;
+            left: 0;
+            border-bottom: 2px solid $lightGreen;
+          }
+        }
+      }
+    }
+  }
 }
