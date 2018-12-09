@@ -36,17 +36,15 @@ if(is_front_page()) {
 	  <div class="container mainBar">
 	    <div class="row">
 	      <div class="col-md-4">
-	        <a href="/" class="site-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nexus-web-logo.svg"></a>
-	      </div>
-	      <div class="col-md-8">
-	        <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
-	        
-	        <div class="navicon-wrap">
+					<a href="/" class="site-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nexus-web-logo.svg"></a>
+					<div class="navicon-wrap">
 	        	<button class="lines-button x" :class="{ close: mobileMenu }"  @click="mobileMenu = !mobileMenu" type="button" role="button" aria-label="Toggle Navigation">
 	        		<span class="lines"></span>
 	        	</button>
 	        </div>
-
+	      </div>
+	      <div class="col-md-8">
+	        <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
 	      </div>
 	    </div>
 	  </div>

@@ -4105,8 +4105,15 @@ a.btn.resourceBtn:hover {
 }
 
 .site-header .site-logo {
-  max-width: 200px;
-  display: block;
+  width: 150px;
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .site-header .site-logo {
+    max-width: 200px;
+    display: block;
+  }
 }
 
 .site-header .mainBar {
@@ -4453,9 +4460,14 @@ a.btn.resourceBtn:hover {
   }
 }
 
+.navicon-wrap:focus,
+.navicon-wrap:active {
+  outline: none;
+}
+
 .lines-button {
   display: inline-block;
-  padding: 1.75rem 0.875rem;
+  padding: 1.16666667rem 0.875rem;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -4475,7 +4487,10 @@ a.btn.resourceBtn:hover {
 .lines-button:active {
   -webkit-transition: 0;
   transition: 0;
-  background: rgba(0, 0, 0, 0.1);
+}
+
+.lines-button:focus {
+  outline: none;
 }
 
 .lines {

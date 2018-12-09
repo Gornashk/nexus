@@ -9,11 +9,16 @@ $transition: .3s; // increase this to see the transformations in slow-motion
   @media ( max-width: 991px ) {
     display:block;
   }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 .lines-button {
   display: inline-block;
-  padding: $button-size/2 $button-size/4;
+  padding: $button-size/3 $button-size/4;
   transition: .3s;
   cursor: pointer;
   user-select: none;
@@ -27,7 +32,10 @@ $transition: .3s; // increase this to see the transformations in slow-motion
  
   &:active {
     transition: 0;
-    background: rgba(0,0,0,.1);
+    // background: rgba(0,0,0,.1);
+  }
+  &:focus {
+    outline: none;
   }
 }
 

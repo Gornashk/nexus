@@ -27,8 +27,13 @@
   }
 
   .site-logo {
-    max-width: 200px;
-    display: block;
+    width: 150px;
+    display: inline-block;
+
+    @include breakpoint(laptop) {
+      max-width: 200px;
+      display: block;
+    }
   }
   .mainBar {
     padding-top: 1.325em;
