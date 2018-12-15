@@ -31,15 +31,21 @@
     display: inline-block;
 
     @include breakpoint(laptop) {
+      width: auto;
       max-width: 200px;
       display: block;
     }
   }
   .mainBar {
-    padding-top: 1.325em;
-    padding-bottom: 1.325em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     position: relative;
     z-index: 5;
+
+    @include breakpoint(laptop) {
+      padding-top: 1.325em;
+      padding-bottom: 1.325em;
+    }
   }
   
   .row, .wrap {

@@ -4111,16 +4111,24 @@ a.btn.resourceBtn:hover {
 
 @media (min-width: 992px) {
   .site-header .site-logo {
+    width: auto;
     max-width: 200px;
     display: block;
   }
 }
 
 .site-header .mainBar {
-  padding-top: 1.325em;
-  padding-bottom: 1.325em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   position: relative;
   z-index: 5;
+}
+
+@media (min-width: 992px) {
+  .site-header .mainBar {
+    padding-top: 1.325em;
+    padding-bottom: 1.325em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4754,13 +4762,28 @@ dl.gallery-item {
 }
 
 .vidOverCont {
-  height: calc(100vh - 186px);
+  height: calc(100vh - 150px);
   color: #09492b;
   position: relative;
+  font-size: .825em;
+}
+
+@media (min-width: 768px) {
+  .vidOverCont {
+    font-size: 1em;
+    height: calc(100vh - 186px);
+  }
 }
 
 .vidOverCont h2 {
   font-weight: 400;
+  max-width: 60%;
+}
+
+@media (min-width: 768px) {
+  .vidOverCont h2 {
+    max-width: 100%;
+  }
 }
 
 .vidOverCont .vidOver_btm {
@@ -4775,12 +4798,27 @@ dl.gallery-item {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+  max-width: 100%;
 }
 
 .vidOverMain {
   background: rgba(238, 219, 195, 0.75);
-  padding: 2em 0;
-  margin-top: 4em;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  .vidOverMain {
+    padding: 1.5em 0;
+    margin-top: 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .vidOverMain {
+    padding: 2em 0;
+    margin-top: 4em;
+  }
 }
 
 .vidOverMain .container {
@@ -4853,7 +4891,7 @@ dl.gallery-item {
 }
 
 .linkIcons {
-  padding: 3em 0 0;
+  padding: 1em 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4865,12 +4903,26 @@ dl.gallery-item {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  font-size: .825em;
+}
+
+@media (min-width: 768px) {
+  .linkIcons {
+    font-size: .9em;
+  }
+}
+
+@media (min-width: 992px) {
+  .linkIcons {
+    padding: 3em 0 0;
+    font-size: 1em;
+  }
 }
 
 .linkIcons .iconBox {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   padding: 0 1em;
   text-align: center;
   display: -webkit-box;
@@ -4885,6 +4937,22 @@ dl.gallery-item {
           justify-content: flex-start;
 }
 
+@media (min-width: 768px) {
+  .linkIcons .iconBox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .linkIcons .iconBox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+}
+
 .linkIcons .iconBox svg {
   font-size: 3.5em;
   margin-bottom: .25em;
@@ -4895,7 +4963,7 @@ dl.gallery-item {
   border-radius: 4px;
   display: block;
   height: 100%;
-  margin-bottom: 3em;
+  margin-bottom: .5em;
   padding: .5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4912,8 +4980,21 @@ dl.gallery-item {
           justify-content: space-between;
 }
 
+@media (min-width: 992px) {
+  .linkIcons .iconBox a {
+    margin-bottom: 3em;
+  }
+}
+
 .linkIcons .iconBox a h4 {
   margin: 0;
+  font-size: 1.25em;
+}
+
+@media (min-width: 992px) {
+  .linkIcons .iconBox a h4 {
+    font-size: 1.5em;
+  }
 }
 
 .linkIcons .iconBox a:hover,

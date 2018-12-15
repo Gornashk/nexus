@@ -20,12 +20,23 @@
   }
 }
 .vidOverCont {
-  height: calc(100vh - 186px);
+  height: calc(100vh - 150px);
   color: $green;
   position: relative;
+  font-size: .825em;
+
+  @include breakpoint(tablet) {
+    font-size: 1em;
+    height: calc(100vh - 186px);
+  }
 
   h2 {
     font-weight: 400;
+    max-width: 60%;
+
+    @include breakpoint(tablet) {
+      max-width: 100%;
+    }
   }
   .vidOver_btm {
     position: absolute;
@@ -38,13 +49,23 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
+      max-width: 100%;
     }
   }
 }
 .vidOverMain {
   background:$lightBrownTrans75;
-  padding: 2em 0;
-  margin-top: 4em;
+  padding: 1em 0;
+  margin-top: 2em;
+
+  @include breakpoint(tablet) {
+    padding: 1.5em 0;
+    margin-top: 3em;
+  }
+  @include breakpoint(laptop) {
+    padding: 2em 0;
+    margin-top: 4em;
+  }
 
   .container {
     font-size: 1.125em;
@@ -114,21 +135,37 @@
 }
 
 .linkIcons {
-  padding: 3em 0 0;
+  padding: 1em 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   // align-content: stretch;
+  font-size: .825em;
+
+  @include breakpoint(tablet) {
+    font-size: .9em;
+  }
+  @include breakpoint(laptop) {
+    padding: 3em 0 0;
+    font-size: 1em;
+  }
 
   .iconBox {
-    flex: 0 0 20%;
+    flex: 0 0 50%;
     padding: 0 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
     // align-items: center;
     justify-content: flex-start;
+
+    @include breakpoint(tablet) {
+      flex: 0 0 33.3333%
+    }
+    @include breakpoint(laptop) {
+      flex: 0 0 20%;
+    }
 
     svg {
       font-size: 3.5em;
@@ -140,15 +177,24 @@
       @include border-radius(4px);
       display: block;
       height: 100%;
-      margin-bottom: 3em;
+      margin-bottom: .5em;
       padding: .5em;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
 
+      @include breakpoint(laptop) {
+        margin-bottom: 3em;
+      }
+
       h4 {
         margin: 0;
+        font-size: 1.25em;
+
+        @include breakpoint(laptop) {
+          font-size: 1.5em;
+        }
       }
 
       &:hover,
