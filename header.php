@@ -20,7 +20,7 @@ if(is_front_page()) {
 } ?>
 	<header class="site-header <?php echo $front; ?>" id="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
 		<?php cr_mobile_menu(); ?>
-		<div class="topBar">
+		<div class="topBar" :class="{ opened : mobileMenu }">
 			<div class="container">
 				<div class="row">
 					<form class="trackOrder">
@@ -33,7 +33,7 @@ if(is_front_page()) {
 				</div>
 			</div>
 		</div>
-	  <div class="container mainBar">
+	  <div class="container mainBar" :class="{ opened : mobileMenu }">
 	    <div class="row">
 	      <div class="col-md-4">
 					<a href="/" class="site-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/nexus-web-logo.svg"></a>

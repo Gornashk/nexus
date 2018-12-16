@@ -4105,8 +4105,14 @@ a.btn.resourceBtn:hover {
 }
 
 .site-header .site-logo {
-  width: 150px;
+  width: 100px;
   display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .site-header .site-logo {
+    width: 150px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4121,7 +4127,10 @@ a.btn.resourceBtn:hover {
   padding-top: 1em;
   padding-bottom: 1em;
   position: relative;
-  z-index: 5;
+  z-index: 15;
+  top: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -4129,6 +4138,10 @@ a.btn.resourceBtn:hover {
     padding-top: 1.325em;
     padding-bottom: 1.325em;
   }
+}
+
+.site-header .mainBar.opened {
+  top: -37px;
 }
 
 @media (min-width: 992px) {
@@ -4340,11 +4353,12 @@ a.btn.resourceBtn:hover {
   display: none;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 71px);
   top: 0;
   right: 0;
-  background: #333;
-  padding-left: 25%;
+  background: #eedbc3;
+  padding-top: 71px;
+  padding-left: 0;
   font-weight: bold;
   text-transform: uppercase;
   z-index: 0;
@@ -4355,16 +4369,14 @@ a.btn.resourceBtn:hover {
   transform: rotateY(-15deg) translate3d(-100%, 0, 0);
   -webkit-transform-origin: right center center;
   transform-origin: right center center;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .mobile-nav-wrap.opened {
   display: block;
   overflow: auto;
-  z-index: 1;
+  z-index: 10;
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
   -webkit-transform-style: preserve-3d;
@@ -4379,7 +4391,7 @@ a.btn.resourceBtn:hover {
 
 .navigation-mobile a {
   display: block;
-  color: #fff;
+  color: #09492b;
   padding: 5px 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -4460,6 +4472,8 @@ a.btn.resourceBtn:hover {
   display: none;
   text-align: right;
   float: right;
+  position: relative;
+  top: -0.81666667rem;
 }
 
 @media (max-width: 991px) {
@@ -4475,7 +4489,7 @@ a.btn.resourceBtn:hover {
 
 .lines-button {
   display: inline-block;
-  padding: 1.16666667rem 0.875rem;
+  padding: 0.81666667rem 0.6125rem;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -4483,7 +4497,7 @@ a.btn.resourceBtn:hover {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border-radius: 0.5rem;
+  border-radius: 0.35rem;
   background: transparent;
   border: none;
 }
@@ -4503,10 +4517,10 @@ a.btn.resourceBtn:hover {
 
 .lines {
   display: inline-block;
-  width: 3.5rem;
-  height: 0.5rem;
+  width: 2.45rem;
+  height: 0.35rem;
   background: #fff;
-  border-radius: 0.25rem;
+  border-radius: 0.175rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
@@ -4516,25 +4530,25 @@ a.btn.resourceBtn:hover {
 .lines:before,
 .lines:after {
   display: inline-block;
-  width: 3.5rem;
-  height: 0.5rem;
+  width: 2.45rem;
+  height: 0.35rem;
   background: #fff;
-  border-radius: 0.25rem;
+  border-radius: 0.175rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: absolute;
   left: 0;
   content: '';
-  -webkit-transform-origin: 0.25rem center;
-          transform-origin: 0.25rem center;
+  -webkit-transform-origin: 0.175rem center;
+          transform-origin: 0.175rem center;
 }
 
 .lines:before {
-  top: 1rem;
+  top: 0.7rem;
 }
 
 .lines:after {
-  top: -1rem;
+  top: -0.7rem;
 }
 
 .lines-button:hover {
@@ -4542,11 +4556,11 @@ a.btn.resourceBtn:hover {
 }
 
 .lines-button:hover .lines:before {
-  top: 1.16666667rem;
+  top: 0.81666667rem;
 }
 
 .lines-button:hover .lines:after {
-  top: -1.16666667rem;
+  top: -0.81666667rem;
 }
 
 .lines-button.x.close .lines {
@@ -4560,7 +4574,7 @@ a.btn.resourceBtn:hover {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   top: 0;
-  width: 3.5rem;
+  width: 2.45rem;
 }
 
 .lines-button.x.close .lines:before {

@@ -27,8 +27,12 @@
   }
 
   .site-logo {
-    width: 150px;
+    width: 100px;
     display: inline-block;
+
+    @include breakpoint(tablet) {
+      width: 150px;
+    }
 
     @include breakpoint(laptop) {
       width: auto;
@@ -40,11 +44,17 @@
     padding-top: 1em;
     padding-bottom: 1em;
     position: relative;
-    z-index: 5;
+    z-index: 15;
+    top: 0;
+    @include transition(all .2s ease-in-out);
 
     @include breakpoint(laptop) {
       padding-top: 1.325em;
       padding-bottom: 1.325em;
+    }
+
+    &.opened {
+      top: -37px;
     }
   }
   
@@ -111,6 +121,10 @@
     position: relative;
     z-index: 5;
     @include box-shadow(0 5px 10px rgba(0,0,0,.125));
+
+    &.opened {
+
+    }
 
     .row {
       margin: 0;
