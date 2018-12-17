@@ -7,7 +7,8 @@
   	
 	<title><?php wp_title();?></title>
 	<?php wp_head();?>
-	<script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-eAVkiER0fL/ySiqS7dXu8TLpoR8d9KRzIYtG0Tz7pi24qgQIIupp0fn2XA1H90fP" crossorigin="anonymous"></script>
+	<script defer src="<?php echo get_stylesheet_directory_uri(); ?>/js/all.min.js"></script>
+	<!-- <script defer src="https://pro.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-eAVkiER0fL/ySiqS7dXu8TLpoR8d9KRzIYtG0Tz7pi24qgQIIupp0fn2XA1H90fP" crossorigin="anonymous"></script> -->
 </head>
 
 <body <?php body_class(); ?>>
