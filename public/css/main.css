@@ -4662,6 +4662,11 @@ a.btn.resourceBtn:hover {
   background-color: #0f7646;
 }
 
+.mainContent p:last-child,
+.fullCta p:last-child {
+  margin-bottom: 0;
+}
+
 .pageIntro {
   padding: 1.5em 0;
   margin-bottom: 1.5em;
