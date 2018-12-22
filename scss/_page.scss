@@ -3,6 +3,10 @@
 .fullCta {
   padding: 1.5em 0;
 
+  @include breakpoint(laptop) {
+    padding: 3em 0;
+  }
+
   &.none {
     background-color: $white;
   }

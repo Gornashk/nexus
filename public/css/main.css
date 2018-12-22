@@ -4592,6 +4592,13 @@ a.btn.resourceBtn:hover {
   padding: 1.5em 0;
 }
 
+@media (min-width: 992px) {
+  .mainContent,
+  .fullCta {
+    padding: 3em 0;
+  }
+}
+
 .mainContent.none,
 .fullCta.none {
   background-color: #fff;
