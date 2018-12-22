@@ -4753,6 +4753,37 @@ dl.gallery-item {
   clear: both;
 }
 
+.mainContent {
+  padding: 1.5em 0;
+}
+
+.mainContent.none {
+  background-color: transparent;
+}
+
+.mainContent.brown {
+  background-color: #A28E74;
+  color: #fff;
+}
+
+.mainContent.lightBrown {
+  background-color: #eedbc3;
+}
+
+.mainContent.darkBrown {
+  background-color: #554735;
+  color: #eedbc3;
+}
+
+.mainContent.green {
+  background-color: #09492b;
+  color: #fff;
+}
+
+.mainContent.lightGreen {
+  background-color: #0f7646;
+}
+
 .fullscreenVid {
   position: fixed;
   top: 37px;

@@ -146,3 +146,30 @@ dl.gallery-item {
     clear: both;
   }
 }
+
+// Main Content
+.mainContent {
+  padding: 1.5em 0;
+
+  &.none {
+    background-color: transparent;
+  }
+  &.brown { 
+    background-color: $brown;
+    color: $white;
+  }
+  &.lightBrown {
+    background-color: $lightBrown;
+  }
+  &.darkBrown {
+    background-color: $darkBrown;
+    color: $lightBrown;
+  }
+  &.green {
+    background-color: $green;
+    color: $white;
+  }
+  &.lightGreen {
+    background-color: $lightGreen;
+  }
+}

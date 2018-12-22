@@ -91,30 +91,32 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 			<?php // MAIN CONTENT SECTION
 			elseif( get_row_layout() == 'content_section' ):
+				$secBG = get_sub_field('section_background_color');
 				$secHead = get_sub_field('section_header');
 				$secSubHead = get_sub_field('section_sub_header');
 				$subHead = get_sub_field('sub_header');
 				$secContent = get_sub_field('section_content'); ?>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-push-2">
-							<?php if($secHead) { ?>
-							<h1 class="secHead"><?php echo $secHead; ?></h1>
-							<?php } 
-							if($secSubHead) { ?>
-							<h2 class="secSubHead"><?php echo $secSubHead; ?></h2>
-							<?php } ?>
-							<?php if($secHead || $secSubHead) { ?>
-								<div class="sectionLine"></div>
-							<?php } ?>
-							<div class="sectionContent">
-								<?php if($subHead) { ?>
-								<h2 class="subHead"><?php echo $subHead; ?></h2>
+				<div class="mainContent <?php echo $secBG; ?>">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-push-2">
+								<?php if($secHead) { ?>
+								<h1 class="secHead"><?php echo $secHead; ?></h1>
 								<?php } 
-								if($secContent) { 
-									echo $secContent;
-								} ?>
+								if($secSubHead) { ?>
+								<h2 class="secSubHead"><?php echo $secSubHead; ?></h2>
+								<?php } ?>
+								<?php if($secHead || $secSubHead) { ?>
+									<div class="sectionLine"></div>
+								<?php } ?>
+								<div class="sectionContent">
+									<?php if($subHead) { ?>
+									<h2 class="subHead"><?php echo $subHead; ?></h2>
+									<?php } 
+									if($secContent) { 
+										echo $secContent;
+									} ?>
+								</div>
 							</div>
 						</div>
 					</div>
