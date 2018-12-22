@@ -198,13 +198,14 @@ if(have_posts()) : while(have_posts()) : the_post();
 				</div><!-- End Inline Video -->
 
 			<?php // FULL WIDTH CTA SECTION
-			elseif( get_row_layout() == 'full-width_cta' ): 
+			elseif( get_row_layout() == 'full-width_cta' ):
+				$secBG = get_sub_field('section_background_color');
 				$title = get_sub_field('title');
 				$content = get_sub_field('content');
 				$btnTxt = get_sub_field('button_text');
 				$btnLink = get_sub_field('button_link'); ?>
 
-				<div class="fullCta">
+				<div class="fullCta <?php echo $secBG; ?>">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8 col-md-push-2">

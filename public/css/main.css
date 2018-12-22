@@ -4587,6 +4587,74 @@ a.btn.resourceBtn:hover {
           transform: rotate3d(0, 0, 1, -45deg);
 }
 
+.mainContent,
+.fullCta {
+  padding: 1.5em 0;
+}
+
+.mainContent.none,
+.fullCta.none {
+  background-color: #fff;
+}
+
+.mainContent.brown,
+.fullCta.brown {
+  background-color: #A28E74;
+  color: #fff;
+}
+
+.mainContent.brown h1,
+.fullCta.brown h1 {
+  color: #eedbc3;
+}
+
+.mainContent.brown h2,
+.fullCta.brown h2 {
+  color: #0f7646;
+}
+
+.mainContent.lightBrown,
+.fullCta.lightBrown {
+  background-color: #eedbc3;
+}
+
+.mainContent.darkBrown,
+.fullCta.darkBrown {
+  background-color: #554735;
+  color: #eedbc3;
+}
+
+.mainContent.darkBrown h1,
+.fullCta.darkBrown h1 {
+  color: #fff;
+}
+
+.mainContent.darkBrown h2,
+.fullCta.darkBrown h2 {
+  color: #0f7646;
+}
+
+.mainContent.green,
+.fullCta.green {
+  background-color: #09492b;
+  color: #fff;
+}
+
+.mainContent.green h1,
+.fullCta.green h1 {
+  color: #eedbc3;
+}
+
+.mainContent.green h2,
+.fullCta.green h2 {
+  color: #fff;
+}
+
+.mainContent.lightGreen,
+.fullCta.lightGreen {
+  background-color: #0f7646;
+}
+
 .pageIntro {
   padding: 1.5em 0;
   margin-bottom: 1.5em;
@@ -4751,37 +4819,6 @@ dl.gallery-item {
   content: '';
   display: table;
   clear: both;
-}
-
-.mainContent {
-  padding: 1.5em 0;
-}
-
-.mainContent.none {
-  background-color: #fff;
-}
-
-.mainContent.brown {
-  background-color: #A28E74;
-  color: #fff;
-}
-
-.mainContent.lightBrown {
-  background-color: #eedbc3;
-}
-
-.mainContent.darkBrown {
-  background-color: #554735;
-  color: #eedbc3;
-}
-
-.mainContent.green {
-  background-color: #09492b;
-  color: #fff;
-}
-
-.mainContent.lightGreen {
-  background-color: #0f7646;
 }
 
 .fullscreenVid {
