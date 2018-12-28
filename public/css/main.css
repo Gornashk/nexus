@@ -4592,6 +4592,11 @@ a.btn.resourceBtn:hover {
   padding: 1.5em 0;
 }
 
+.mainContent p:last-child,
+.fullCta p:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 992px) {
   .mainContent,
   .fullCta {
@@ -4673,11 +4678,6 @@ a.btn.resourceBtn:hover {
 .mainContent.lightGreen,
 .fullCta.lightGreen {
   background-color: #0f7646;
-}
-
-.mainContent p:last-child,
-.fullCta p:last-child {
-  margin-bottom: 0;
 }
 
 .pageIntro {
