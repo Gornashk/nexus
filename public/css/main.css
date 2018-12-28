@@ -4602,6 +4602,14 @@ a.btn.resourceBtn:hover {
 .mainContent.none,
 .fullCta.none {
   background-color: #fff;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .mainContent.none,
+  .fullCta.none {
+    padding: 0;
+  }
 }
 
 .mainContent.brown,

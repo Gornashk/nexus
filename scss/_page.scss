@@ -9,6 +9,10 @@
 
   &.none {
     background-color: $white;
+    padding: 0;
+    @include breakpoint(laptop) {
+      padding: 0;
+    }
   }
   &.brown { 
     background-color: $brown;
