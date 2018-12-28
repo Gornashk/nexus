@@ -10,6 +10,9 @@
   &.none {
     background-color: $white;
     padding: 0;
+    p {
+      margin-bottom: 1.5em;
+    }
     @include breakpoint(laptop) {
       padding: 0;
     }

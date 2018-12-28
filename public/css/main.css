@@ -4605,6 +4605,11 @@ a.btn.resourceBtn:hover {
   padding: 0;
 }
 
+.mainContent.none p,
+.fullCta.none p {
+  margin-bottom: 1.5em;
+}
+
 @media (min-width: 992px) {
   .mainContent.none,
   .fullCta.none {
