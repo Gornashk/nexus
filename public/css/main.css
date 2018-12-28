@@ -4607,7 +4607,7 @@ a.btn.resourceBtn:hover {
 .mainContent.none,
 .fullCta.none {
   background-color: #fff;
-  padding: 0;
+  padding: 0 0 1.5em;
 }
 
 .mainContent.none p,
@@ -4618,7 +4618,7 @@ a.btn.resourceBtn:hover {
 @media (min-width: 992px) {
   .mainContent.none,
   .fullCta.none {
-    padding: 0;
+    padding: 0 0 1.5em;
   }
 }
 
