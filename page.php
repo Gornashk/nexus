@@ -124,40 +124,42 @@ if(have_posts()) : while(have_posts()) : the_post();
 			
 			<?php // TWO COLUMN SECTION
 			elseif( get_row_layout() == 'two_column_section' ):
+				$secBG = get_sub_field('section_background_color');
 				$secHead = get_sub_field('section_header');
 				$secSubHead = get_sub_field('section_sub_header');
 				$leftCol = get_sub_field('left_column');
 				$rightCol = get_sub_field('right_column'); ?>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-push-2">
-							<?php if($secHead) { ?>
-								<h1 class="secHead"><?php echo $secHead; ?></h1>
-							<?php } 
-							if($secSubHead) { ?>
-								<h2 class="secSubHead"><?php echo $secSubHead; ?></h2>
-							<?php } ?>
-							<div class="twoColWrap">
-							<?php if($leftCol) { ?>
-								<div class="col-sm-5">
-									<?php echo $leftCol; ?>
+				<div class="twoColContent <?php echo $secBG; ?>">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-push-2">
+								<?php if($secHead) { ?>
+									<h1 class="secHead"><?php echo $secHead; ?></h1>
+								<?php } 
+								if($secSubHead) { ?>
+									<h2 class="secSubHead"><?php echo $secSubHead; ?></h2>
+								<?php } ?>
+								<div class="twoColWrap">
+								<?php if($leftCol) { ?>
+									<div class="col-sm-5">
+										<?php echo $leftCol; ?>
+									</div>
+								<?php }
+								if($rightCol) {
+									if($leftCol) { 
+										$offset = 'col-sm-offset-2';
+									} else {
+										$offset = '';
+									} ?>
+									<div class="col-sm-5 <?php echo $offset; ?>">
+										<?php echo $rightCol; ?>
+									</div>
+								<?php } ?>
 								</div>
-							<?php }
-							if($rightCol) {
-								if($leftCol) { 
-									$offset = 'col-sm-offset-2';
-								} else {
-									$offset = '';
-								} ?>
-								<div class="col-sm-5 <?php echo $offset; ?>">
-									<?php echo $rightCol; ?>
-								</div>
-							<?php } ?>
 							</div>
 						</div>
-					</div>
-				</div><!-- End Main Content -->
+					</div><!-- End Main Content -->
+				</div>
 
 			<?php // INLINE IMAGE SECTION
 			elseif( get_row_layout() == 'inline_image' ):

@@ -4588,95 +4588,112 @@ a.btn.resourceBtn:hover {
 }
 
 .mainContent,
-.fullCta {
+.fullCta,
+.twoColContent {
   padding: 1.5em 0;
 }
 
 .mainContent p:last-child,
-.fullCta p:last-child {
+.fullCta p:last-child,
+.twoColContent p:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 992px) {
   .mainContent,
-  .fullCta {
+  .fullCta,
+  .twoColContent {
     padding: 3em 0;
   }
 }
 
 .mainContent.none,
-.fullCta.none {
+.fullCta.none,
+.twoColContent.none {
   background-color: #fff;
   padding: 0 0 1.5em;
 }
 
 .mainContent.none p,
-.fullCta.none p {
+.fullCta.none p,
+.twoColContent.none p {
   margin-bottom: 1.5em;
 }
 
 @media (min-width: 992px) {
   .mainContent.none,
-  .fullCta.none {
+  .fullCta.none,
+  .twoColContent.none {
     padding: 0 0 1.5em;
   }
 }
 
 .mainContent.brown,
-.fullCta.brown {
+.fullCta.brown,
+.twoColContent.brown {
   background-color: #A28E74;
   color: #fff;
 }
 
 .mainContent.brown h1,
-.fullCta.brown h1 {
+.fullCta.brown h1,
+.twoColContent.brown h1 {
   color: #eedbc3;
 }
 
 .mainContent.brown h2,
-.fullCta.brown h2 {
+.fullCta.brown h2,
+.twoColContent.brown h2 {
   color: #0f7646;
 }
 
 .mainContent.lightBrown,
-.fullCta.lightBrown {
+.fullCta.lightBrown,
+.twoColContent.lightBrown {
   background-color: #eedbc3;
 }
 
 .mainContent.darkBrown,
-.fullCta.darkBrown {
+.fullCta.darkBrown,
+.twoColContent.darkBrown {
   background-color: #554735;
   color: #eedbc3;
 }
 
 .mainContent.darkBrown h1,
-.fullCta.darkBrown h1 {
+.fullCta.darkBrown h1,
+.twoColContent.darkBrown h1 {
   color: #fff;
 }
 
 .mainContent.darkBrown h2,
-.fullCta.darkBrown h2 {
+.fullCta.darkBrown h2,
+.twoColContent.darkBrown h2 {
   color: #0f7646;
 }
 
 .mainContent.green,
-.fullCta.green {
+.fullCta.green,
+.twoColContent.green {
   background-color: #09492b;
   color: #fff;
 }
 
 .mainContent.green h1,
-.fullCta.green h1 {
+.fullCta.green h1,
+.twoColContent.green h1 {
   color: #eedbc3;
 }
 
 .mainContent.green h2,
-.fullCta.green h2 {
+.fullCta.green h2,
+.twoColContent.green h2 {
   color: #fff;
 }
 
 .mainContent.lightGreen,
-.fullCta.lightGreen {
+.fullCta.lightGreen,
+.twoColContent.lightGreen {
   background-color: #0f7646;
 }
 
