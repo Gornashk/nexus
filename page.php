@@ -124,12 +124,20 @@ if(have_posts()) : while(have_posts()) : the_post();
 			
 			<?php // TWO COLUMN SECTION
 			elseif( get_row_layout() == 'two_column_section' ):
+				$secHead = get_sub_field('section_header');
+				$secSubHead = get_sub_field('section_sub_header');
 				$leftCol = get_sub_field('left_column');
 				$rightCol = get_sub_field('right_column'); ?>
 
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-push-2">
+							<?php if($secHead) { ?>
+								<h1 class="secHead"><?php echo $secHead; ?></h1>
+							<?php } 
+							if($secSubHead) { ?>
+								<h2 class="secSubHead"><?php echo $secSubHead; ?></h2>
+							<?php } ?>
 							<div class="twoColWrap">
 							<?php if($leftCol) { ?>
 								<div class="col-sm-5">
