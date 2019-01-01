@@ -4624,7 +4624,7 @@ a.btn.resourceBtn:hover {
   .mainContent.none,
   .fullCta.none,
   .twoColContent.none {
-    padding: 0 0 1.5em;
+    padding: 1.5em 0;
   }
 }
 
