@@ -4611,7 +4611,7 @@ a.btn.resourceBtn:hover {
 .fullCta.none,
 .twoColContent.none {
   background-color: #fff;
-  padding: 0 0 1.5em;
+  padding: 1.5em 0 0;
 }
 
 .mainContent.none p,
