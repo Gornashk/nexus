@@ -7,7 +7,7 @@ $dir = get_stylesheet_directory_uri();
 <div class="fullscreenVid">
   <div class="vidOver"></div>
   <video loop muted autoplay poster="<?php echo $dir; ?>/img/video-still.jpg" class="fullscreen-bg__video">
-    <source src="<?php echo $dir; ?>/img/indy-encoded.mp4" type="video/webm">
+    <source src="<?php echo $dir; ?>/img/Indy-encoded.mp4" type="video/mp4">
   </video>
   <!-- <img src="<?php echo $dir; ?>/img/video-still.jpg" alt="Indianapolis Skyline"> -->
 </div>
