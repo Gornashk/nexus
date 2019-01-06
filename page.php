@@ -274,6 +274,37 @@ if(have_posts()) : while(have_posts()) : the_post();
 					</div>
 				</div><!-- End Quote Section -->
 
+			<?php
+			elseif( get_row_layout() == 'icons' ):
+				if(have_rows('icon_links')): ?>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="linkIcons">
+									<?php while( have_rows('icon_links')) : the_row(); 
+									$awesomeIcon = get_sub_field('font_awesome_icon');
+									$imgIcon = get_sub_field('image_icon');
+									$title = get_sub_field('title');
+									$link = get_sub_field('page_link'); ?>
+									<div class="iconBox">
+										<a href="<?php echo $link; ?>" title="<?php echo $title; ?>">
+											<?php
+											if($awesomeIcon) : 
+												echo $awesomeIcon;
+											elseif($imgIcon):
+												echo '<img src="'.$imgIcon.'" alt="'.$title.'">';
+											endif; ?>
+											<h4><?php echo $title; ?></h4>
+										</a>
+									</div>
+									<?php endwhile; ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php 
+				endif; ?>
+
 			<?php 
 			endif;
 		endwhile;
