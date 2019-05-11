@@ -3,21 +3,19 @@
   .gform_body {
     ul {
       li {
-        &.left {
-          float: left;
-          margin-right: 5%;
-          width: 47.5%;
-          margin-bottom: 16px;
-          clear: none;
-          input, textarea {
-            width: 100%!important;
-          }
-        }
+        &.left,
         &.right {
           float: left;
           width: 47.5%;
           margin-bottom: 16px;
           clear: none;
+
+          input, textarea {
+            width: 100%!important;
+          }
+        }
+        &.left {
+          margin-right: 5%; 
         }
         .gfield_label {
           display: none;

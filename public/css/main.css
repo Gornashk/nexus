@@ -4038,24 +4038,23 @@ a.btn.resourceBtn:hover {
   background: #031c10;
 }
 
-.gform_wrapper .gform_body ul li.left {
+.gform_wrapper .gform_body ul li.left,
+.gform_wrapper .gform_body ul li.right {
   float: left;
-  margin-right: 5%;
   width: 47.5%;
   margin-bottom: 16px;
   clear: none;
 }
 
 .gform_wrapper .gform_body ul li.left input,
-.gform_wrapper .gform_body ul li.left textarea {
+.gform_wrapper .gform_body ul li.left textarea,
+.gform_wrapper .gform_body ul li.right input,
+.gform_wrapper .gform_body ul li.right textarea {
   width: 100% !important;
 }
 
-.gform_wrapper .gform_body ul li.right {
-  float: left;
-  width: 47.5%;
-  margin-bottom: 16px;
-  clear: none;
+.gform_wrapper .gform_body ul li.left {
+  margin-right: 5%;
 }
 
 .gform_wrapper .gform_body ul li .gfield_label {
