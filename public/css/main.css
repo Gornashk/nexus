@@ -4042,16 +4042,20 @@ a.btn.resourceBtn:hover {
   float: left;
   margin-right: 5%;
   width: 47.5%;
+  margin-bottom: 16px;
+  clear: none;
 }
 
 .gform_wrapper .gform_body ul li.left input,
 .gform_wrapper .gform_body ul li.left textarea {
-  width: 100%;
+  width: 100% !important;
 }
 
 .gform_wrapper .gform_body ul li.right {
   float: left;
   width: 47.5%;
+  margin-bottom: 16px;
+  clear: none;
 }
 
 .gform_wrapper .gform_body ul li .gfield_label {
@@ -4067,7 +4071,7 @@ a.btn.resourceBtn:hover {
 }
 
 .gform_wrapper .gform_body ul li .ginput_complex label {
-  display: none;
+  display: none !important;
 }
 
 .gform_wrapper .gform_footer {

@@ -7,13 +7,17 @@
           float: left;
           margin-right: 5%;
           width: 47.5%;
+          margin-bottom: 16px;
+          clear: none;
           input, textarea {
-            width: 100%;
+            width: 100%!important;
           }
         }
         &.right {
           float: left;
           width: 47.5%;
+          margin-bottom: 16px;
+          clear: none;
         }
         .gfield_label {
           display: none;
@@ -27,7 +31,7 @@
         }
         .ginput_complex {
           label {
-            display: none;
+            display: none!important;
           }
         }
       }
