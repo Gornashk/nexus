@@ -3,6 +3,18 @@
   .gform_body {
     ul {
       li {
+        &.left {
+          float: left;
+          margin-right: 5%;
+          width: 47.5%;
+          input, textarea {
+            width: 100%;
+          }
+        }
+        &.right {
+          float: left;
+          width: 47.5%;
+        }
         .gfield_label {
           display: none;
         }
@@ -12,6 +24,11 @@
           font-size: 1em;
           color: $darkBrown;
           padding: .5em .75em;
+        }
+        .ginput_complex {
+          label {
+            display: none;
+          }
         }
       }
     }

@@ -4038,6 +4038,22 @@ a.btn.resourceBtn:hover {
   background: #031c10;
 }
 
+.gform_wrapper .gform_body ul li.left {
+  float: left;
+  margin-right: 5%;
+  width: 47.5%;
+}
+
+.gform_wrapper .gform_body ul li.left input,
+.gform_wrapper .gform_body ul li.left textarea {
+  width: 100%;
+}
+
+.gform_wrapper .gform_body ul li.right {
+  float: left;
+  width: 47.5%;
+}
+
 .gform_wrapper .gform_body ul li .gfield_label {
   display: none;
 }
@@ -4048,6 +4064,10 @@ a.btn.resourceBtn:hover {
   font-size: 1em;
   color: #554735;
   padding: .5em .75em;
+}
+
+.gform_wrapper .gform_body ul li .ginput_complex label {
+  display: none;
 }
 
 .gform_wrapper .gform_footer {
