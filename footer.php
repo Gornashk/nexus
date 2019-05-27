@@ -6,6 +6,9 @@
         </div>
         <div class="col-md-8">
           <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
+          <div class="newsletterApp" id="newsletterApp">
+            <newsletter></newsletter>
+          </div>
         </div>
       </div>
 	    <div class="row">

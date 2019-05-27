@@ -5,6 +5,8 @@ require_once('bones.php'); // if you remove this, bones will break
 // ACF commands
 require_once( 'inc/class-acf-commands.php' ); // ACF fields syncing
 
+require_once( 'inc/mailchimpRoute.php' );
+
 // Add php components
 require_once( __DIR__ . '/components/bootstrap.php' );
 

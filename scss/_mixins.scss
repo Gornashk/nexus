@@ -31,6 +31,28 @@
      @media (max-width: 575px)  { @content ; }
 
   }
+  @if $point==forDesktopDown {
+    @media (max-width: 1800px) {
+      @content;
+    }
+  }
+  @if $point==forSmallDesktopDown {
+    @media (max-width: 1500px) {
+      @content;
+    }
+  } @else if $point==forTabletLandscapeDown {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point==forTabletPortraitDown {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $point==forPhoneOnly {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
 }
 
 // Placeholder text

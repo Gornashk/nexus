@@ -4300,9 +4300,9 @@ a.btn.resourceBtn:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -4319,7 +4319,7 @@ a.btn.resourceBtn:hover {
 }
 
 .site-footer .menu {
-  margin: 0;
+  margin: 0 0 1.5em;
   padding: 0;
 }
 

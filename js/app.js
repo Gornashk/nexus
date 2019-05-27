@@ -19,5 +19,10 @@ require("../vue/app.js");
 // Mobile Menu Component
 require("../vue/mobileMenu/app-mobile-menu.js");
 
+// Newsletter signup app
+if (document.getElementsByClassName("newsletterApp").length > 0) {
+  require("../vue/newsletter/app-newsletter.js");
+}
+
 // Require JavaScript
 require("./script");
