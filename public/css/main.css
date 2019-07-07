@@ -4010,20 +4010,20 @@ img {
 .btn,
 a.btn {
   padding: .75em 1.25em;
-  background: #c33c54;
+  background: #09492b;
   color: #fff;
   -webkit-box-shadow: 0 4px 6px 0 rgba(50, 50, 93, 0.11), 0 1px 3px 0 rgba(0, 1, 3, 0.08);
           box-shadow: 0 4px 6px 0 rgba(50, 50, 93, 0.11), 0 1px 3px 0 rgba(0, 1, 3, 0.08);
-  border-radius: 27px;
+  border-radius: 4px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: .875em;
+  font-size: 1em;
   letter-spacing: 1px;
 }
 
 .btn:hover,
 a.btn:hover {
-  background: #9c3043;
+  background: #031c10;
   color: #fff;
 }
 
@@ -4036,6 +4036,20 @@ a.btn.resourceBtn {
 .btn.resourceBtn:hover,
 a.btn.resourceBtn:hover {
   background: #031c10;
+}
+
+.green .btn,
+.green a.btn,
+.lightGreen .btn,
+.lightGreen a.btn {
+  background: #A28E74;
+}
+
+.green .btn:hover,
+.green a.btn:hover,
+.lightGreen .btn:hover,
+.lightGreen a.btn:hover {
+  background: #554735;
 }
 
 .gform_wrapper .gform_body ul li.left,
