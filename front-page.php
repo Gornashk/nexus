@@ -16,7 +16,7 @@ $dir = get_stylesheet_directory_uri();
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <h2>The Links and Connections to your Customers</h2>
+        <h2>Be Connected &#183; Be Linked &#183; Be Calm</h2>
       </div>
     </div>
   </div>
