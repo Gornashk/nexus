@@ -16,10 +16,10 @@
     "cross-env": "^5.1.1",
     "css-loader": "^0.28.11",
     "es2015": "0.0.0",
-    "jquery": "^3.2",
+    "jquery": "^3.5",
     "laravel-mix": "^2.1.11",
-    "lodash": "^4.17.10",
-    "node-sass": "^4.9.0",
+    "lodash": "^4.17.190",
+    "node-sass": "^4.13.1",
     "postcss-loader": "^2.1.5",
     "vue": "^2.5.16",
     "webpack": "^3.10.0"
