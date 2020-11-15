@@ -1,7 +1,8 @@
 <template>
   <div class="signupBar">
     <div class="signupInner" v-show="!subscribed">
-      <p>Sign up for the Nexus Courier email list.</p>
+      <p>Be Connected &#183; Be Linked &#183; Be Calm and receive news, tips, trends, tidbits and resources.<br/>
+      The newsletter is free and sent directly to your email inbox.</p>
       <form>
         <input type="email" name="emailaddress" placeholder="Your email" 
         :class="{ error: subscribeError }"
@@ -91,6 +92,10 @@ module.exports = {
   width: 70%;
   margin: 0 0 0 auto;
   color: $white;
+
+  .signupInner {
+    text-align: left;
+  }
 
   @include breakpoint(forTabletPortraitDown) {
     margin: 0 auto;
