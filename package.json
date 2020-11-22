@@ -22,7 +22,7 @@
     "node-sass": "^4.13.1",
     "postcss-loader": "^2.1.5",
     "vue": "^2.5.16",
-    "webpack": "^3.10.0",
+    "webpack": "^3.10.0"
   },
   "dependencies": {
     "babel-loader": "^7.1.4",
@@ -31,6 +31,6 @@
     "sass-loader": "^7.0.1",
     "vue2-google-maps": "^0.9.7",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.1.2",
+    "tailwindcss": "^1.1.2"
   }
 }
