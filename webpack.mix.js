@@ -1,4 +1,6 @@
 let mix = require("laravel-mix");
+const tailwindcss = require("tailwindcss");
+const autoprefixer = require("autoprefixer");
 
 /*
  |--------------------------------------------------------------------------
@@ -12,6 +14,10 @@ let mix = require("laravel-mix");
  */
 
 mix.js("js/app.js", "public/js")
+.options({
+processCssUrls: false,
+postCss: [autoprefixer(), tailwindcss("tailwind.config.js")]
+})
 .sass("scss/main.scss", "public/css")
 .setPublicPath('public')
 .browserSync('nexus.local');
