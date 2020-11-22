@@ -15,8 +15,8 @@ const autoprefixer = require("autoprefixer");
 
 mix.js("js/app.js", "public/js")
 .options({
-processCssUrls: false,
-postCss: [autoprefixer(), tailwindcss("tailwind.config.js")]
+    processCssUrls: false,
+    postCss: [autoprefixer(), tailwindcss("tailwind.config.js")]
 })
 .sass("scss/main.scss", "public/css")
 .setPublicPath('public')
