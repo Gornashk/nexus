@@ -22,7 +22,10 @@
     "node-sass": "^4.13.1",
     "postcss-loader": "^2.1.5",
     "vue": "^2.5.16",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "tailwindcss": "^2.0.1",
+    "postcss": "^8.1.9",
+    "autoprefixer": "^10.0.2"
   },
   "dependencies": {
     "babel-loader": "^7.1.4",
